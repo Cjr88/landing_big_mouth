@@ -6,12 +6,14 @@
     text-decoration: none;
     list-style: none;
 }
+.main-container{
+    max-width: 1024px;
+}
 
 header .container{
    display: flex;
    justify-content: space-between;
    padding: 18px;
-  
 }
 .titulo-principal .container {
     display: flex;
@@ -67,8 +69,88 @@ button:hover{
     width: 780px;
 }
 
-
-
 footer{
     text-align: center;
+}
+@media (max-width:767px){
+    header img{
+        width: 100%;
+    }
+    button{
+        padding: 6px;
+        margin: 6px;
+        font-size: 14px;
+    }
+    .titulo-principal .container{
+        display: block;
+        font-size: 22px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+
+    }
+    .titulo-principal .container img{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .sub-titulo{
+        font-size: 18px;
+        margin-top: 60px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 150px 150px;
+        gap: 3%;
+        justify-content: center;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+    .grid-container img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+    box-shadow:  23px 23px 46px #bebebe,
+    -23px -23px 46px #ffffff;
+}
+    .poster img{
+        width: 360px;
+    }
+    
+}
+@media (min-width:767px) and (max-width:1023px){
+
+    .titulo-principal .container{
+        display: block;
+        font-size: 36px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        padding-top: 65px;
+
+    }
+    .titulo-principal .container img{
+        padding-top: 20px;
+    }
+    .sub-titulo{
+        font-size: 30px;
+        margin-top: 60px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .grid-container img{
+    height: 145px;
+    width: 145px;
+    border-radius: 50px;
+    box-shadow:  23px 23px 46px #bebebe,
+    -23px -23px 46px #ffffff;
+}
+    .poster img{
+        width: 768px;
+    }
+    
 }
